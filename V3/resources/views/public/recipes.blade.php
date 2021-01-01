@@ -198,16 +198,16 @@
             @foreach($posts as $post)
             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                 <div class="product-box-layout1">
-                    <figure class="item-figure"><a href="single-recipe1.html"><img
+                    <figure class="item-figure"><a href="/recipe/single/{{$post->id}}"><img
                                 style="width: 370px; height: 272.250px;"
                                 src='{{asset("storage/postImages/$post->image")}}' alt="Product"></a></figure>
                     <div class="item-content">
                         <span class="sub-title">{{$post->category->cat_name}}</span>
-                        <h3 class="item-title"><a href="single-recipe1.html">{{$post->title}}</a></h3>
+                        <h3 class="item-title"><a href="/recipe/single/{{$post->id}}">{{$post->title}}</a></h3>
                         <p>{{$post->description}} </p>
                         <ul class="entry-meta">
                             <li><a href="#"><i class="fas fa-clock"></i>{{$post->preparation_time}} Mins</a></li>
-                            <li><a href="/user/{{$post->user->id}}"><i class="fas fa-user"></i>by
+                            <li><a href="/author/{{$post->user->id}}"><i class="fas fa-user"></i>by
                                     <span></span>{{$post->user->firstName}}</a></li>
                             <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
                         </ul>

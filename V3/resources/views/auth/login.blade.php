@@ -13,23 +13,23 @@
                     <form class="login-form" method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="row">
-                            @error('email')
-                            <div class="text-danger col-md-6" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </div>
-                            @enderror
-                            @error('password')
-                            <div class="text-danger col-md-6" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </div>
-                            @enderror
                             <div class="col-md-6">
                                 <label class="mb-3">Email Address</label>
                                 <input class="main-input-box" type="text" placeholder="" name="email" />
+                                @error('email')
+                                <div class="text-danger col-md-6" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                             <div class="col-md-6">
                                 <label class="mb-3">Password</label>
                                 <input class="main-input-box" type="password" placeholder="" name="password" />
+                                @error('password')
+                                <div class="text-danger col-md-6" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="row">
@@ -43,24 +43,10 @@
                         <div class="btn-area">
                             <button class="btn-fill btn-primary" type="submit">Login<i
                                     class="flaticon-next"></i></button>
-                            <button class="btn-fill btn-dark" value="Login">Create an Account<i
-                                    class="flaticon-next"></i></button>
+                            <a href="{{ route('register') }}" class="btn-fill btn-dark">Create an Account<i
+                                    class="flaticon-next"></i></a>
                         </div>
                     </form>
-
-                </div>
-            </div>
-            <div class="col-lg-4 sidebar-widget-area sidebar-break-md">
-                <div class="widget">
-                    <div class="section-heading heading-dark">
-                        <h3 class="item-heading">ABOUT ME</h3>
-                    </div>
-                    <div class="widget-about">
-                        <figure class="author-figure"><img src="img/figure/about.jpg" alt="about"></figure>
-                        <figure class="author-signature"><img src="img/figure/signature.png" alt="about"></figure>
-                        <p>Fusce mauris auctor ollicituder teary iner hendrerit risusey aeenean rauctor pibus
-                            doloer.</p>
-                    </div>
                 </div>
             </div>
         </div>

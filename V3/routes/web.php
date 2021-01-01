@@ -66,7 +66,7 @@ Route::get('/submit-recipe', 'PostsController@show');
 
 Route::post('/create_post', 'PostsController@create');
 Route::get('/recipes/{id}', 'CategoriesController@ShowRecipes');
-Route::get('/single/{id}', 'PostsController@SingleRecipes');
+Route::get('/recipe/single/{id}', 'PostsController@SingleRecipes');
 
 Auth::routes();
 

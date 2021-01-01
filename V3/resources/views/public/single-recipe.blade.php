@@ -25,7 +25,7 @@
              <div class="col-md-8">
  <img src='{{asset("storage/postImages/$post->image")}}'  alt="Banner" style="max-height: 400px; max-width: 600px;" class="mx-auto d-block">
     </div>
-        
+
         </div>
              </div>
         <!-- Single Recipe Main Banner Area End Here -->
@@ -39,7 +39,7 @@
                         <ul class="entry-meta">
                             <li class="single-meta"><a href="#"><i class="far fa-calendar-alt"></i>Nov 14,
                                     2018</a></li>
-                            <li class="single-meta"><a href="#"><i class="fas fa-user"></i>by <span>{{$post->user->firstName}}</span></a></li>
+                            <li class="single-meta"><a href="/author/{{$post->user->id}}"><i class="fas fa-user"></i>by <span>{{$post->user->firstName}}</span></a></li>
                             <li class="single-meta">
                                 <ul class="item-rating">
                                     <li class="star-fill"><i class="fas fa-star"></i></li>
@@ -53,7 +53,7 @@
                             <li class="single-meta"><a href="#"><i class="fas fa-heart"></i><span>02</span>
                                     Likes</a></li>
                         </ul>
-                      
+
                     </div>
                     <div class="item-feature">
                         <ul>
@@ -112,7 +112,7 @@
                         </ul>
                     </div>
                     <p class="item-description">{{$post->description}}</p>
-            
+
                     <div class="related-recipe">
                         <h4 class="heading-title">User Posts</h4>
                         <div class="rc-carousel nav-control-layout3" data-loop="true" data-items="5" data-margin="40"
@@ -128,19 +128,19 @@
                             <div class="shop-box-layout1" >
                                 <div class="mask-item bg--light" >
                                     <div class="item-figure">
-                                        <img src='{{asset("storage/postImages/$posts->image")}}' alt="Product" style="height: 250px;">
+                                        <img src='{{asset("storage/postImages/$posts->image")}}' style="height: 250px;">
                                     </div>
-                                   
+
                                 </div>
                                 <div class="item-content">
-                                    <h3 class="item-title"><a href="single-shop.html">{{$posts->category->cat_name}}</a></h3>
-                                    <div class="item-price"><span class="currency"></span>{{$posts->title}}</div>
+                                    <h3 class="item-title"><a href="/recipe/single/{{$post->id}}">{{$posts->title}}</a></h3>
+                                    <div class="item-price"><span class="currency"></span>{{$posts->category->cat_name}}</div>
                                 </div>
                             </div>
                         @endforeach
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
         </section>

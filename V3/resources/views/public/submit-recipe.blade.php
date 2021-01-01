@@ -10,7 +10,7 @@
                             <h1>Submit a Recipe</h1>
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>Recipe Post</li>
                             </ul>
@@ -46,7 +46,7 @@
                                         @endforeach
                                 </select>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label>Description</label>
                                 <textarea placeholder="Type your text" class="textarea form-control" name="description" id="form-message"
@@ -88,7 +88,7 @@
                                                 name="preparation">
                                         </div>
                                     </div>
-                                  
+
                                     <div class="col-lg-6">
                                         <label for="cooking">Cooking Time:</label>
                                         <div class="form-group additional-input-box icon-left">
@@ -97,7 +97,7 @@
                                                 name="cooking">
                                         </div>
                                     </div>
-                                   
+
                                     <div class="col-lg-6">
                                         <label for="serving">Serving People:</label>
                                         <div class="form-group additional-input-box icon-left">
@@ -106,7 +106,7 @@
                                                 name="serving">
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <button type="submit" class="btn-submit">SUBMIT RECIPE</button>
@@ -129,7 +129,7 @@
                                     data-r-extra-large-nav="true" data-r-extra-large-dots="false">
                                     <div class="featured-box-layout1">
                                         <div class="item-img">
-                                            <img src="img/product/product17.jpg" alt="Brand" class="img-fluid">
+                                            <img src="{{asset('public/img/product/product17.jpg')}}" alt="Brand" class="img-fluid">
                                         </div>
                                         <div class="item-content">
                                             <span class="ctg-name">BREAKFAST</span>
@@ -169,16 +169,6 @@
                         <div class="widget">
                             <div class="section-heading heading-dark">
                                 <h3 class="item-heading">SUBSCRIBE &amp; FOLLOW</h3>
-                            </div>
-                            <div class="widget-follow-us">
-                                <ul>
-                                    <li class="single-item"><a href="#"><i class="fab fa-facebook-f"></i>LIKE ME ON</a></li>
-                                    <li class="single-item"><a href="#"><i class="fab fa-twitter"></i>LIKE ME</a></li>
-                                    <li class="single-item"><a href="#"><i class="fab fa-linkedin-in"></i>LIKE ME</a></li>
-                                    <li class="single-item"><a href="#"><i class="fab fa-pinterest-p"></i>LIKE ME</a></li>
-                                    <li class="single-item"><a href="#"><i class="fab fa-instagram"></i>LIKE ME</a></li>
-                                    <li class="single-item"><a href="#"><i class="fab fa-youtube"></i>Subscribe</a></li>
-                                </ul>
                             </div>
                         </div>
                         <div class="widget">
@@ -251,55 +241,55 @@
                                 <ul>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure9.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure9.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure10.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure10.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure11.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure11.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure12.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure12.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure13.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure13.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure14.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure14.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure15.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure15.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure16.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure16.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="item-box">
-                                            <img src="img/social-figure/social-figure17.jpg" alt="Social Figure" class="img-fluid">
+                                            <img src="{{asset('public/img/social-figure/social-figure17.jpg')}}" alt="Social Figure" class="img-fluid">
                                             <a href="#" class="item-icon"><i class="fab fa-instagram"></i></a>
                                         </div>
                                     </li>

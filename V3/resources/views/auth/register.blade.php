@@ -1,77 +1,90 @@
-@extends('layouts.app')
+@extends('layout.publicmain')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
+    <!-- Login Area Start Here -->
+    <section class="login-page-wrap padding-top-80 padding-bottom-50">
+        <div class="container">
+            <div class="row gutters-60">
+                <div class="col-lg-8">
+                    <div class="login-box-layout1">
+                        <div class="section-heading heading-dark">
+                            <h2 class="item-heading">REGISTER FORM</h2>
+                        </div>
+                        <form class="login-form" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="mb-3">First Name</label>
+                                    <input class="main-input-box" type="text" placeholder="" name="firstName" />
+                                    @error('firstName')
+                                    <div class="text-danger col-md-6" role="alert">
                                         <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-3">Last Name</label>
+                                    <input class="main-input-box" type="text" placeholder="" name="lastName" />
+                                    @error('lastName')
+                                    <div class="text-danger col-md-6" role="alert">
                                         <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-3">Email</label>
+                                    <input class="main-input-box" type="text" placeholder="" name="email" />
+                                    @error('email')
+                                    <div class="text-danger col-md-6" role="alert">
                                         <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-3">Bio</label>
+                                    <input class="main-input-box" type="text" placeholder="" name="bio" />
+                                    @error('bio')
+                                    <div class="text-danger col-md-6" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-3">Password</label>
+                                    <input class="main-input-box" type="password" placeholder="" name="password" />
+                                    @error('password')
+                                    <div class="text-danger col-md-6" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </div>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="mb-3">Confirm Password</label>
+                                    <input class="main-input-box" type="password" placeholder="" name="password_confirmation" />
+                                    @error('password_confirmation')
+                                    <div class="text-danger col-md-6" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </div>
+                                    @enderror
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="checkbox checkbox-primary">
+                                        <input id="checkbox1" type="checkbox" name="remember">
+                                        <label for="checkbox1">Remember Me</label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
+                            <div class="btn-area">
+                                <button class="btn-fill btn-primary" type="submit">Register<i
+                                        class="flaticon-next"></i></button>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+    <!-- Login Area End Here -->
 @endsection

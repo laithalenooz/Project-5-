@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\post;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+
 
 class UsersController extends Controller
 {
@@ -88,7 +90,7 @@ class UsersController extends Controller
         if ($request->hasFile('image')){
             $file=$request-> image -> getClientOriginalExtension();
             $file_name=time().'.'.$file;
-            $path='image/categories';
+            $path='image/users';
             $request-> image ->move($path,$file_name);
         }
         else {
@@ -99,11 +101,11 @@ class UsersController extends Controller
             'firstName'=>$request['firstName'],
             'lastName'=>$request['lastName'],
             'bio'=>$request['bio'],
-            'password'=>$request['password'],
+            'password'=>Hash::make('password'),
             'email'=>$request['email'],
             'image'=>$file_name,
         ]) ;
-        return redirect("admin/categories");
+        return redirect("/");
     }
 
     /**

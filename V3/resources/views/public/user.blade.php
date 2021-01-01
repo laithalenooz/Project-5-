@@ -27,7 +27,7 @@
                     <div class="col-lg-8">
                         <div class="author-info">
                             <div class="media media-none--xs">
-                                <img src='{{asset("storage/users/$user->image")}}' alt="Blog Author" style="width: 182px; height: 182px;" class="rounded-circle media-img-auto">
+                                <img src='{{asset("image/users/$user->image")}}' alt="Blog Author" style="width: 182px; height: 182px;" class="rounded-circle media-img-auto">
                                 <div class="media-body">
                                         <h2 class="author-title">{{$user->firstName}} {{$user->lastName}}</h2>
 

@@ -13,7 +13,7 @@
             data-r-extra-large="1" data-r-extra-large-nav="true" data-r-extra-large-dots="false">
             @foreach ($posts as $post)
             <div class="ranna-slider-content-layout1">
-                <figure class="item-figure"><a href="single-recipe1.html"><img style="height:518; width:1110px;"
+                <figure class="item-figure"><a href="single-recipe1.html"><img style="height:518px; width:1110px;"
                             src='{{asset("storage/postImages/$post->image")}}' alt="Product"></a></figure>
                 <div class="item-content">
                     <span class="sub-title"></span>
@@ -21,7 +21,7 @@
                     <p>{{$post->description}} </p>
                     <ul class="entry-meta">
                         <li><a href="#"><i class="fas fa-clock"></i>{{$post->preparation_time}}</a></li>
-                        <li><a href="#"><i class="fas fa-user"></i>by <span>{{$post->user->firstName}}</span></a>
+                        <li><a href="/author/{{$post->user->id}}"><i class="fas fa-user"></i>by <span>{{$post->user->firstName}}</span></a>
                         </li>
                         <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
                     </ul>
@@ -39,14 +39,15 @@
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="product-box-layout1">
                     <figure class="item-figure"><a href="single-recipe1.html"><img
+                                style="width: 370px; height: 272.250px;"
                                 src='{{asset("storage/postImages/$post->image")}}' alt="Product"></a></figure>
                     <div class="item-content text-break">
                         <span class="sub-title">{{$post->category->cat_name}}</span>
-                        <h3 class="item-title"><a href="single-recipe1.html">{{$post->title}}</a></h3>
+                        <h3 class="item-title"><a href="/recipe/single/{{$post->id}}">{{$post->title}}</a></h3>
                         <p class="text-break">{{$post->description}} </p>
                         <ul class="entry-meta">
                             <li><a href="#"><i class="fas fa-clock"></i>{{$post->preparation_time}}</a></li>
-                            <li><a href="#"><i class="fas fa-user"></i>by <span>{{$post->user->firstName}}</span></a>
+                            <li><a href="/author/{{$post->user->id}}"><i class="fas fa-user"></i>by <span>{{$post->user->firstName}}</span></a>
                             </li>
                             <li><a href="#"><i class="fas fa-heart"></i><span>02</span> Likes</a></li>
                         </ul>
@@ -56,35 +57,5 @@
             @endforeach
         </div>
     </div>
-</section>
-<!-- Slider Area End Here -->
-<section class="instagram-feed-wrap">
-    <div class="instagram-feed-title"><a href="#"><i class="fab fa-instagram"></i>Follow On Instagram</a></div>
-    <ul class="instagram-feed-figure">
-        <li>
-            <a href="single-recipe1.html"><img src="public/img/social-figure/social-figure2.jpg" alt="Social"></a>
-        </li>
-        <li>
-            <a href="single-recipe1.html"><img src="public/img/social-figure/social-figure1.jpg" alt="Social"></a>
-        </li>
-        <li>
-            <a href="single-recipe1.html"><img src="public/img/social-figure/social-figure3.jpg" alt="Social"></a>
-        </li>
-        <li>
-            <a href="single-recipe1.html"><img src="public/img/social-figure/social-figure4.jpg" alt="Social"></a>
-        </li>
-        <li>
-            <a href="single-recipe1.html"><img src="public/img/social-figure/social-figure5.jpg" alt="Social"></a>
-        </li>
-        <li>
-            <a href="single-recipe1.html"><img src="public/img/social-figure/social-figure6.jpg" alt="Social"></a>
-        </li>
-        <li>
-            <a href="single-recipe1.html"><img src="public/img/social-figure/social-figure7.jpg" alt="Social"></a>
-        </li>
-        <li>
-            <a href="single-recipe1.html"><img src="public/img/social-figure/social-figure8.jpg" alt="Social"></a>
-        </li>
-    </ul>
 </section>
 @endsection

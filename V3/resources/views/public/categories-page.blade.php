@@ -28,7 +28,7 @@
                 @foreach($all_category as $key => $input)
                             <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                                 <div class="category-box-layout1">
-                                    <figure class="item-figure"><a href='/recipes/{{$input['id']}}'><img src='{{asset("/image/categories/$input->cat_image")}}' style="height: 370px; width: 399px;" alt="Product"></a></figure>
+                                    <figure class="item-figure"><a href='/recipes/{{$input['id']}}'><img src="{{asset('public/image/categories/$input->cat_image')}}" style="height: 370px; width: 399px;" alt="Product"></a></figure>
                                     <div class="item-content">
                                         <h3 class="item-title"><a href='/recipes/{{$input['id']}}'>{{$input['cat_name']}}</a></h3>
                                         <span class="sub-title"></span>

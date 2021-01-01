@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d8bcae9-4dea-4153-8a2a-94224ae15dca" name="Default Changelist" comment="" />
+    <list default="true" id="5d8bcae9-4dea-4153-8a2a-94224ae15dca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/publicmain.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/publicmain.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/categories-page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/categories-page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/recipes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/recipes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/single-author.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/single-author.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/single-recipe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/single-recipe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/submit-recipe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/submit-recipe.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/public/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/public/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -103,6 +123,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mLlbcjT33ZSXcwGIvu1Pqoz1qD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -111,6 +132,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -129,10 +151,22 @@
       <option name="presentableId" value="Default" />
       <updated>1609280830076</updated>
       <workItem from="1609280833542" duration="1768000" />
+      <workItem from="1609530202029" duration="5966000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -65,165 +65,12 @@
                                 </div>
                                 <nav class="site-nav">
                                     <ul id="site-menu" class="site-menu">
-                                        <li><a href="#">Home</a>
-                                            <ul class="dropdown-menu-col-1">
-                                                <li><a href="index.html">Home 1</a></li>
-                                                <li><a href="index2.html">Home 2</a></li>
-                                            </ul>
+                                        <li><a href="/">Home</a>
                                         </li>
-                                        <li>
-                                            <a href="category.html">Category</a>
+                                        <li><a href="/categories">Categories</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Recipes</a>
-                                            <ul class="dropdown-menu-col-1">
-                                                <li>
-                                                    <a href="recipe-with-sidebar.html">Recipes With Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="recipe-without-sidebar.html">Recipes Without Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-recipe1.html">Single Recipe 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-recipe2.html">Single Recipe 2</a>
-                                                </li>
-                                            </ul>
+                                        <li><a href="/about">About Us</a>
                                         </li>
-                                        <li class="possition-static hide-on-mobile-menu">
-                                            <a href="#">Pages</a>
-                                            <div class="template-mega-menu">
-                                                <div class="container">
-                                                    <div class="row">
-                                                        <div class="col-4">
-                                                            <div class="menu-ctg-title">Home</div>
-                                                            <ul class="sub-menu">
-                                                                <li>
-                                                                    <a href="index.html">
-                                                                        <i class="fas fa-home"></i>Home 1</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="index2.html">
-                                                                        <i class="fas fa-home"></i>Home 2</a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="menu-ctg-title">Recipes</div>
-                                                            <ul class="sub-menu">
-                                                                <li>
-                                                                    <a href="recipe-with-sidebar.html"><i
-                                                                            class="fas fa-utensils"></i>Recipes
-                                                                        With Sidebar</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="recipe-without-sidebar.html"><i
-                                                                            class="fas fa-utensils"></i>Recipes
-                                                                        Without
-                                                                        Sidebar</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <ul class="sub-menu">
-                                                                <li>
-                                                                    <a href="single-recipe1.html"><i
-                                                                            class="fas fa-utensils"></i>Single
-                                                                        Recipe 1</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="single-recipe2.html"><i
-                                                                            class="fas fa-utensils"></i>Single
-                                                                        Recipe 2</a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="menu-ctg-title">Other Pages</div>
-                                                            <ul class="sub-menu">
-                                                                <li>
-                                                                    <a href="about.html"><i
-                                                                            class="fab fa-cloudversify"></i>About</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="author.html"><i
-                                                                            class="fas fa-user"></i>Author</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="single-author.html"><i
-                                                                            class="fas fa-user"></i>Author
-                                                                        Details</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <ul class="sub-menu">
-                                                                <li>
-                                                                    <a href="submit-recipe.html"><i
-                                                                            class="far fa-share-square"></i>Submit
-                                                                        Recipe</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="login.html"><i
-                                                                            class="fas fa-lock"></i>Login</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="404.html"><i
-                                                                            class="fas fa-exclamation-triangle"></i>404
-                                                                        Error</a>
-                                                                </li>
-                                                            </ul>
-                                                            <div class="menu-ctg-title">Shop</div>
-                                                            <ul class="sub-menu">
-                                                                <li>
-                                                                    <a href="shop.html"><i
-                                                                            class="fas fa-shopping-cart"></i>Shop</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="single-shop.html"><i
-                                                                            class="fas fa-shopping-cart"></i>Shop
-                                                                        Details</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="hide-on-desktop-menu">
-                                            <a href="#">Pages</a>
-                                            <ul class="dropdown-menu-col-1">
-                                                <li>
-                                                    <a href="about.html">About</a>
-                                                </li>
-                                                <li>
-                                                    <a href="author.html">Author</a>
-                                                </li>
-                                                <li>
-                                                    <a href="single-author.html">Author Details</a>
-                                                </li>
-                                                <li>
-                                                    <a href="submit-recipe.html">Submit Recipe</a>
-                                                </li>
-                                                <li>
-                                                    <a href="login.html">Login</a>
-                                                </li>
-                                                <li>
-                                                    <a href="login.html">404 Error</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Blog</a>
-                                            <ul class="dropdown-menu-col-1">
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-list.html">Blog List</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Shop</a>
-                                            <ul class="dropdown-menu-col-1">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="single-shop.html">Shop Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -231,92 +78,18 @@
                                 <div class="nav-action-elements-layout1">
                                     <ul>
                                         <li>
-                                            <div class="cart-wrap cart-on-mobile">
-                                                <div class="cart-info">
-                                                    <i class="flaticon-shopping-bag"></i>
-                                                    <div class="cart-amount"><span class="item-currency">$</span>00
-                                                    </div>
-                                                </div>
-                                                <div class="cart-items">
-                                                    <div class="cart-item">
-                                                        <div class="cart-img">
-                                                            <a href="#">
-                                                                <img src="{{asset('public/img/product/top-product1.jpg')}}"
-                                                                    alt="product" class="img-fluid">
-                                                            </a>
-                                                        </div>
-                                                        <div class="cart-title">
-                                                            <a href="#">Pressure</a>
-                                                            <span>Code: STPT601</span>
-                                                        </div>
-                                                        <div class="cart-quantity">X 1</div>
-                                                        <div class="cart-price">$249</div>
-                                                        <div class="cart-trash">
-                                                            <a href="#">
-                                                                <i class="far fa-trash-alt"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-item">
-                                                        <div class="cart-img">
-                                                            <a href="#">
-                                                                <img src="{{asset('public/img/product/top-product2.jpg')}}"
-                                                                    alt="product" class="img-fluid">
-                                                            </a>
-                                                        </div>
-                                                        <div class="cart-title">
-                                                            <a href="#">Stethoscope</a>
-                                                            <span>Code: STPT602</span>
-                                                        </div>
-                                                        <div class="cart-quantity">X 1</div>
-                                                        <div class="cart-price">$189</div>
-                                                        <div class="cart-trash">
-                                                            <a href="#">
-                                                                <i class="far fa-trash-alt"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-item">
-                                                        <div class="cart-img">
-                                                            <a href="#">
-                                                                <img src="{{asset('public/img/product/top-product3.jpg')}}"
-                                                                    alt="product" class="img-fluid">
-                                                            </a>
-                                                        </div>
-                                                        <div class="cart-title">
-                                                            <a href="#">Microscope</a>
-                                                            <span>Code: STPT603</span>
-                                                        </div>
-                                                        <div class="cart-quantity">X 2</div>
-                                                        <div class="cart-price">$379</div>
-                                                        <div class="cart-trash">
-                                                            <a href="#">
-                                                                <i class="far fa-trash-alt"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-item">
-                                                        <div class="cart-btn">
-                                                            <a href="#" class="item-btn">View Cart</a>
-                                                            <a href="#" class="item-btn">Checkout</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
                                             @guest
                                             <button type="button" class="login-btn">
                                                 <a class="login-btn" href="/login"> <i
                                                         class="flaticon-profile"></i>Login</a>
-                                                </buatton>
+                                                </button>
                                                 @endguest
 
 
 
                                                 @auth
                                         <li class="nav-item dropdown">
-                                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
+                                            <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#"
                                                 role="button" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false" v-pre>
                                                 {{ Auth::user()->firstName }} <span class="caret"></span>
@@ -342,7 +115,7 @@
                                         @endauth
                                         </li>
                                         <li>
-                                            <a href=" submit-recipe.html" class="fill-btn"><i
+                                            <a href="/submit-recipe" class="fill-btn"><i
                                                     class="flaticon-plus-1"></i>SUBMIT
                                                 RECIPE</a>
                                         </li>
@@ -381,93 +154,6 @@
                                             src="{{asset('public/img/logo-dark.png')}}" alt="Site Logo"></a>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="nav-action-elements-layout3">
-                                    <ul>
-                                        <li>
-                                            <div class="header-search-box">
-                                                <a href="#met-search" title="Search" class="search-button">
-                                                    <i class="flaticon-search"></i>
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="cart-wrap cart-on-desktop">
-                                                <div class="cart-info">
-                                                    <i class="flaticon-shopping-bag"></i>
-                                                    <div class="cart-amount"><span class="item-currency">$</span>00
-                                                    </div>
-                                                </div>
-                                                <div class="cart-items">
-                                                    <div class="cart-item">
-                                                        <div class="cart-img">
-                                                            <a href="#">
-                                                                <img src="{{asset('public/img/product/top-product1.jpg')}}"
-                                                                    alt="product" class="img-fluid">
-                                                            </a>
-                                                        </div>
-                                                        <div class="cart-title">
-                                                            <a href="#">Pressure</a>
-                                                            <span>Code: STPT601</span>
-                                                        </div>
-                                                        <div class="cart-quantity">X 1</div>
-                                                        <div class="cart-price">$249</div>
-                                                        <div class="cart-trash">
-                                                            <a href="#">
-                                                                <i class="far fa-trash-alt"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-item">
-                                                        <div class="cart-img">
-                                                            <a href="#">
-                                                                <img src="{{asset('public/img/product/top-product2.jpg')}}"
-                                                                    alt="product" class="img-fluid">
-                                                            </a>
-                                                        </div>
-                                                        <div class="cart-title">
-                                                            <a href="#">Stethoscope</a>
-                                                            <span>Code: STPT602</span>
-                                                        </div>
-                                                        <div class="cart-quantity">X 1</div>
-                                                        <div class="cart-price">$189</div>
-                                                        <div class="cart-trash">
-                                                            <a href="#">
-                                                                <i class="far fa-trash-alt"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-item">
-                                                        <div class="cart-img">
-                                                            <a href="#">
-                                                                <img src="{{asset('public/img/product/top-product3.jpg')}}"
-                                                                    alt="product" class="img-fluid">
-                                                            </a>
-                                                        </div>
-                                                        <div class="cart-title">
-                                                            <a href="#">Microscope</a>
-                                                            <span>Code: STPT603</span>
-                                                        </div>
-                                                        <div class="cart-quantity">X 2</div>
-                                                        <div class="cart-price">$379</div>
-                                                        <div class="cart-trash">
-                                                            <a href="#">
-                                                                <i class="far fa-trash-alt"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart-item">
-                                                        <div class="cart-btn">
-                                                            <a href="#" class="item-btn">View Cart</a>
-                                                            <a href="#" class="item-btn">Checkout</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -475,7 +161,37 @@
 
 
             @yield('content')
-
+        <!-- Instagram Start Here -->
+            <section class="instagram-feed-wrap">
+                <div class="instagram-feed-title"><a href="#"><i class="fab fa-instagram"></i>Follow On Instagram</a></div>
+                <ul class="instagram-feed-figure">
+                    <li>
+                        <a href="single-recipe1.html"><img src='{{asset("public/img/social-figure/social-figure1.jpg")}}' alt="Social"></a>
+                    </li>
+                    <li>
+                        <a href="single-recipe1.html"><img src='{{asset("public/img/social-figure/social-figure2.jpg")}}' alt="Social"></a>
+                    </li>
+                    <li>
+                        <a href="single-recipe1.html"><img src='{{asset("public/img/social-figure/social-figure3.jpg")}}' alt="Social"></a>
+                    </li>
+                    <li>
+                        <a href="single-recipe1.html"><img src='{{asset("public/img/social-figure/social-figure4.jpg")}}' alt="Social"></a>
+                    </li>
+                    <li>
+                        <a href="single-recipe1.html"><img src='{{asset("public/img/social-figure/social-figure5.jpg")}}' alt="Social"></a>
+                    </li>
+                    <li>
+                        <a href="single-recipe1.html"><img src='{{asset("public/img/social-figure/social-figure6.jpg")}}' alt="Social"></a>
+                    </li>
+                    <li>
+                        <a href="single-recipe1.html"><img src='{{asset("public/img/social-figure/social-figure7.jpg")}}' alt="Social"></a>
+                    </li>
+                    <li>
+                        <a href="single-recipe1.html"><img src='{{asset("public/img/social-figure/social-figure8.jpg")}}' alt="Social"></a>
+                    </li>
+                </ul>
+            </section>
+            <!-- Instagram End Here -->
             <footer class="ranna-bg-dark">
                 <div class="container">
                     <div class="footer-logo">
