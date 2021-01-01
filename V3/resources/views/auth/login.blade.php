@@ -1,79 +1,70 @@
-@extends('layouts.app')
+@extends('layout.publicmain')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
-                <div class="card-body">
-
-                    <form method="POST" action="{{ route('login') }}">
+<!-- Login Area Start Here -->
+<section class="login-page-wrap padding-top-80 padding-bottom-50">
+    <div class="container">
+        <div class="row gutters-60">
+            <div class="col-lg-8">
+                <div class="login-box-layout1">
+                    <div class="section-heading heading-dark">
+                        <h2 class="item-heading">LOGIN FORM</h2>
+                    </div>
+                    <form class="login-form" method="POST" action="{{ route('login') }}">
                         @csrf
-                        <div class="form-group row">
-                            <label for="email"
-                                class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
+                        <div class="row">
+                            @error('email')
+                            <div class="text-danger col-md-6" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </div>
+                            @enderror
+                            @error('password')
+                            <div class="text-danger col-md-6" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </div>
+                            @enderror
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"
-                                    name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
+                                <label class="mb-3">Email Address</label>
+                                <input class="main-input-box" type="text" placeholder="" name="email" />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="mb-3">Password</label>
+                                <input class="main-input-box" type="password" placeholder="" name="password" />
                             </div>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="password"
-                                class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
+                        <div class="row">
                             <div class="col-md-6">
-                                <input id="password" type="password"
-                                    class="form-control @error('password') is-invalid @enderror" name="password"
-                                    required autocomplete="current-password">
-
-                                @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember"
-                                        {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
+                                <div class="checkbox checkbox-primary">
+                                    <input id="checkbox1" type="checkbox" name="remember">
+                                    <label for="checkbox1">Remember Me</label>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                                @endif
-                            </div>
+                        <div class="btn-area">
+                            <button class="btn-fill btn-primary" type="submit">Login<i
+                                    class="flaticon-next"></i></button>
+                            <button class="btn-fill btn-dark" value="Login">Create an Account<i
+                                    class="flaticon-next"></i></button>
                         </div>
                     </form>
+
+                </div>
+            </div>
+            <div class="col-lg-4 sidebar-widget-area sidebar-break-md">
+                <div class="widget">
+                    <div class="section-heading heading-dark">
+                        <h3 class="item-heading">ABOUT ME</h3>
+                    </div>
+                    <div class="widget-about">
+                        <figure class="author-figure"><img src="img/figure/about.jpg" alt="about"></figure>
+                        <figure class="author-signature"><img src="img/figure/signature.png" alt="about"></figure>
+                        <p>Fusce mauris auctor ollicituder teary iner hendrerit risusey aeenean rauctor pibus
+                            doloer.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
+<!-- Login Area End Here -->
 @endsection
